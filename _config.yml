@@ -207,6 +207,10 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  news: 
+    output: true
+    permalink: /news/:name/
+    output: true
 
 
 # These settings control how pages and collections are included in the site

@@ -1,0 +1,12 @@
+<ul>
+    {% assign news_items = site.news | sort: 'date' | reverse %}
+    {% for item in news_items %}
+      <li>
+        <strong>{{ item.date | date: "%B %d, %Y" }}</strong>:
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% if item.excerpt %}
+          <p>{{ item.excerpt }}</p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
