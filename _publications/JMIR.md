@@ -14,4 +14,4 @@ URL: https://www.jmir.org/2024/1/e57885
 DOI: 10.2196/57885'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+This study sought to use next-generation techniques (beyond LDA) from natural language processing to reprocess X data and automatically cluster groups of tweets into topics to differentiate between street- and brand-name data sets. We also aimed to analyze the differences in emotional valence between the 2 data sets to study the relationship between engagement on social media and sentiment.

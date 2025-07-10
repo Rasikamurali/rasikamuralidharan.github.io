@@ -9,4 +9,7 @@ venue: 'International Conference of Human-Robotic Interaction'
 
 citation: 'MANASI SWAMINATHAN, LONG-JING HSU, RASIKA MURALIDHARAN, WESLIE KHOO, DAVID J CRANDALL, SELMA ŠABANOVIĆ'
 ---
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+Semi-structured interviews are commonly used in social sciences that combine a protocol with the flexibility to follow topical trajectories as the conversation unfolds, allowing discovery, exploration, and meaning-making considering the lived experiences of the person being interviewed 
+The project draws inspiration from the Japanese concept of ``ikigai'' or meaning and purpose in life \cite{garcia2017ikigai} that can be derived from personal, interpersonal, and community sources, such as hobbies, family, and volunteering \cite{randall2022finding}. Photographs have been used as a common tool to initiate conversations and elicit memories that can connect to older adults' relationships, family, and activities that bring them meaning in their lives.
+Expanding on our study to develop an ikigai-based activity.
+where older adults discuss personal photographs through conversations that bring out the special moments in their lives along with their interests, life stories and events, close relations, and even their ongoing experiences. 
