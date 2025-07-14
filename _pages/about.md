@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 ## About Me 
-Hi! I'm Rasika. I'm a 2nd year PhD student at [Indiana University, Bloomington,] (https://luddy.indiana.edu/about/index.html) where I am fortunate to be advised by [Dr. Jisun An and Dr. Haewoon Kwak](https://soda-labo.github.io/). I've also had the priviledge of working closely with [Dr. Yong-Yeol Ahn](https://yongyeol.com/). 
+Hi! I'm Rasika. I'm a 2nd year PhD student at [Indiana University, Bloomington,](https://luddy.indiana.edu/about/index.html) where I am fortunate to be advised by [Dr. Jisun An and Dr. Haewoon Kwak](https://soda-labo.github.io/). I've also had the priviledge of working closely with [Dr. Yong-Yeol Ahn](https://yongyeol.com/). 
 
 My research focuses on decentralized socio-technical systems, with a particular interest in self-governance on social media and the dynamics of large language models (LLMs) in team settings. Broadly, I’m passionate about human-AI alignment and interaction. I explore how LLMs can be used as simulation devices to study these interactions—especially how parameters like team structure and human involvement shape outcomes.
 
