@@ -35,3 +35,6 @@ Outside of research, I enjoy reading (mostly fantasy), arranging a cappella musi
 
 - **Beneath the "seeming human-like" LLMs**
   Using mechanistic interpretability methods to see under the hood of LLMs to investigate if it embodies persona, values and beliefs they we think it does, both individually and in a group.
+
+- **Evolution of Social Norms in LLM Agent Society**
+  Thinking of the evolution of social norms as a evolutionary game theory problem, how can a population of LLM agents cooperation, negotatiate and create social norms for their society. 
