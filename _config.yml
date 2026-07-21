@@ -12,10 +12,10 @@ site_theme               : "default"
 title                    : "Rasika Muralidharan"
 title_separator          : "-"
 name                     : &name "Rasika Muralidharan"
-description              : &description "PhD Student @ Indiana University, Bloomington"
-url                      : https://rasikamurali.github.io/rasikamuralidharan.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "Rasikamurali/rasikamuralidharan.github.io"
+description              : &description "PhD Candidate in Informatics at Indiana University studying large language model multi-agent systems, social norms, belief dynamics, and AI safety."
+url                      : https://rasikamurali.github.io # the base hostname & protocol for your site, e.g. "https://[your GitHub username].github.io" for a user/organization site served at the domain root
+baseurl                  : "" # the subpath of your site, e.g. "/blog" (empty for a user site served at "/")
+repository               : "Rasikamurali/Rasikamurali.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -117,8 +117,8 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 :  # left blank on purpose: setting this emits an Organization JSON-LD in seo.html; the default share image + Person schema are set in _includes/head/custom.html
+og_description           : "I study how social norms, expectations, belief dynamics, and collective behavior can be modeled in large language model multi-agent systems, with the goal of building safer and more socially aligned AI systems."  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

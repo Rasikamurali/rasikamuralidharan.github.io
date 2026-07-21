@@ -11,7 +11,58 @@
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png" sizes="32x32"/>
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
-<link rel="icon" href="/images/favicon.ico"/>
+<link rel="icon" href="{{ base_path }}/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
+
+<!-- Default social share image + Twitter/X card (the theme only emits these when a page sets header.image or a twitter username) -->
+{% assign default_share_image = "/images/profile.png" | absolute_url %}
+{% assign share_title = page.seo_title | default: page.title | default: site.title %}
+{% assign share_description = page.description | default: page.excerpt | default: site.og_description | default: site.description | markdownify | strip_html | strip_newlines | escape_once %}
+{% unless page.header.image %}
+  <meta property="og:image" content="{{ default_share_image }}">
+{% endunless %}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ share_title }}">
+<meta name="twitter:description" content="{{ share_description }}">
+<meta name="twitter:image" content="{% if page.header.image %}{% if page.header.image contains '://' %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: '/images/' | absolute_url }}{% endif %}{% else %}{{ default_share_image }}{% endif %}">
+
+{% if page.url == "/" %}
+<!-- schema.org Person (homepage only) — facts sourced from _config.yml and the site owner -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rasika Muralidharan",
+  "url": {{ '/' | absolute_url | jsonify }},
+  "image": {{ default_share_image | jsonify }},
+  "jobTitle": "PhD Candidate in Informatics",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Indiana University"
+  },
+  "worksFor": [
+    { "@type": "Organization", "name": "Complex Networks and Systems, Indiana University" },
+    { "@type": "Organization", "name": "Observatory on Social Media (OSoMe), Indiana University" }
+  ],
+  "knowsAbout": [
+    "Large language model multi-agent systems",
+    "Computational social science",
+    "Social norms",
+    "Belief dynamics",
+    "Normative reasoning",
+    "AI alignment",
+    "AI safety",
+    "Self-governed social media moderation"
+  ],
+  "description": "I study how social norms, expectations, belief dynamics, and collective behavior can be modeled in large language model multi-agent systems, with the goal of building safer and more socially aligned AI systems.",
+  "email": "mailto:rasimura@iu.edu",
+  "sameAs": [
+    "https://scholar.google.com/citations?user=gf_rroYAAAAJ&hl=en",
+    "https://github.com/rasikamurali",
+    "https://bsky.app/profile/rasikamurali.bsky.social"
+  ]
+}
+</script>
+{% endif %}
 
 <!-- end custom head snippets -->
