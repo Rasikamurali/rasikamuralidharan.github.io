@@ -199,8 +199,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
+    output: false
   talks:
     output: true
     permalink: /:collection/:path/

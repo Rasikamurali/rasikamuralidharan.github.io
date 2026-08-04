@@ -5,31 +5,31 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{https://scholar.google.com/citations?user=gf_rroYAAAAJ&hl=en}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my work on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</div>
+{% endif %}
 
-
-<ul>
+<ul class="publication-list">
   {% assign pubs = site.publications | sort: 'date' | reverse %}
   {% for pub in pubs %}
-    <li>
-      <strong>{{ pub.date | date: "%Y" }}</strong>:
-      <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
+    <li style="margin-bottom: 1.5em;">
+      <strong>{{ pub.date | date: "%Y" }}</strong> —
+      {% if pub.paperurl %}
+        <a href="{{ pub.paperurl }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+      {% else %}
+        {{ pub.title }}
+      {% endif %}
+      {% if pub.status and pub.status != "Published" %}
+        <em>({{ pub.status }})</em>
+      {% endif %}
       {% if pub.authors %}
         <br/>{{ pub.authors }}
       {% endif %}
-      {% if pub.journal %}
-        <br/><em>{{ pub.journal }}</em>
-      {% endif %}
-      {% if pub.content %}
-        <p>{{ pub.content | markdownify }}</p>
+      {% if pub.venue %}
+        <br/><em>{{ pub.venue }}</em>
       {% endif %}
     </li>
   {% endfor %}
 </ul>
-
-
