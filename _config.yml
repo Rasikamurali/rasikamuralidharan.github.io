@@ -201,8 +201,7 @@ collections:
   publications:
     output: false
   talks:
-    output: true
-    permalink: /:collection/:path/
+    output: false
   news: 
     output: true
     permalink: /news/:name/
@@ -252,7 +251,7 @@ defaults:
       path: ""
       type: talks
     values:
-      layout: talk
+      layout: single
       author_profile: true
       share: true
 
