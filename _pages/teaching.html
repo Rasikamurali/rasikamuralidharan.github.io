@@ -1,13 +1,18 @@
 ---
 layout: archive
-title: "Teaching"
+title: "Service"
 permalink: /teaching/
 author_profile: true
 ---
 
-<h1>Coming Soon!</h1>
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<ul class="service-list">
+  {% assign items = site.teaching | sort: 'date' | reverse %}
+  {% for item in items %}
+    <li style="margin-bottom: 1.5em;">
+      <strong>{{ item.type }}</strong>{% if item.venue %} — <em>{{ item.venue }}</em>{% endif %}
+      {{ item.content | markdownify }}
+    </li>
+  {% endfor %}
+</ul>
