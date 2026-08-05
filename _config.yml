@@ -33,9 +33,9 @@ author:
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=gf_rroYAAAAJ&hl=en"
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : # URL - add once you have a real ORCID iD (see below)
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=Muralidharan+R"
   researchgate     : # URL
   scopus           : # URL
 
@@ -105,7 +105,7 @@ atom_feed:
 
 # SEO Related
 google_site_verification : "oQo5NnpgLUJzHY7_10_xJLeHzvDtinaBY1hg5dOGgFE"
-bing_site_verification   :
+bing_site_verification   : "2BE727983E05BB2ED80603EA23FFBDDA"
 alexa_site_verification  :
 yandex_site_verification :
 
